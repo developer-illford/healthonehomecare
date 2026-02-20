@@ -7,9 +7,9 @@ font-family: 'Raleway', sans-serif;
 html,
 
 
-body {
+/* body {
     overflow-x: hidden;
-}
+} */
 
 html {
     scroll-behavior: smooth;
