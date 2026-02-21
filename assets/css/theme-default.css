@@ -26,7 +26,7 @@ body {
     font-weight: 400;
     line-height: 26px;
     text-align: left;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
 }
 
 p {
@@ -42,7 +42,7 @@ h4,
 h5,
 h6 {
     color: #23222a;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     font-style: normal;
     margin-bottom: 0;
     line-height: 1.2;
@@ -58,8 +58,12 @@ a {
 }
 
 a {
-    color: #003a37;
-    font-family: 'Raleway', sans-serif;
+    color: #0b2e4a;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+a:hover {
+    color: #957c34;
 }
 
 a:focus,
