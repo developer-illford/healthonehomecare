@@ -13,7 +13,8 @@
     }
 
     .header-menu ul li {
-        margin-right: 30px;
+         margin-right: 20px;
+        margin-left: 10px;
     }
 
     .header-search {
