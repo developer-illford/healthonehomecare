@@ -3815,5 +3815,7 @@
 
 @media only screen and (max-width: 768px) {
  .footer-wiget-logo img{width:100%;}
+.sidebar-textwidget .sidebar-logo a img{width:100%;}
+.sidebar-group .widget-heading{    right: 3px;top: 3px;}
 
 }
