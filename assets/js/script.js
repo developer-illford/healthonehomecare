@@ -34,3 +34,10 @@
             return false;
         });
     }
+
+
+
+   jQuery('.dropdown .dropdown-menu li a').click(function(){
+
+jQuery('.close-side-widget').trigger('click')
+    })

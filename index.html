@@ -45,7 +45,7 @@
 	color: #000000;
 	}
 
-		@media (min-width: 768px) and (max-width: 1199px) {
+	@media (min-width: 768px) and (max-width: 1199px) {
 .insurance-area::before {
     width: 100% !important;
 }
@@ -190,22 +190,22 @@ right: 0;        left: inherit;
 				<div class="col-lg-9">
 					<div class="header-menu">
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="index.html">Home</a></li>
 							<li><a href="about.html">About Us</a></li>
-							<!-- <li><a href="#">Services <i class="bi bi-plus"></i></a>
+							<li><a href="#">Services <i class="bi bi-plus"></i></a>
 								<div class="sub-menu">
 									<ul>
 										
-										<li><a href="life-insurance.html">Life Insurance</a></li>
-										<li><a href="car-insurance.html">Car Insurance</a></li>
-										<li><a href="health-insurance.html">Health Insurance</a></li>
-										<li><a href="home-insurance.html">Home Insurance</a></li>
+										<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
+										<li><a href="services.html#support-workers">Support Workers</a></li>
+										<li><a href="services.html#ancillary-staff-support">Ancillary Staff Support</a></li>
+										<!-- <li><a href="home-insurance.html">Home Insurance</a></li>
 										<li><a href="travel-insurance.html">Travel Insurance</a></li>
-										<li><a href="marrige-insurance.html">Marrige Insurance</a></li>
+										<li><a href="marrige-insurance.html">Marrige Insurance</a></li> -->
 									</ul>
 								</div>
-							</li> -->
-							<li><a href="services.html">Services</a></li>
+							</li>
+							<!-- <li><a href="services.html">Services</a></li> -->
 						
 							<li><a href="career.html">Career</a></li>
 							<li><a href="contact.html">Contact Us</a></li>
@@ -337,11 +337,11 @@ right: 0;        left: inherit;
 							</div>
 						</div>
 						<div class="service-content">
-							<h4><a href="services.html">Care Home Staffing & Specialist 1:1 Care</a></h4>
+							<h4><a href="services.html#care-home-staffing">Care Home Staffing & Specialist 1:1 Care</a></h4>
 							<p>We supply experienced healthcare assistants and registered nurses to private care homes across Northern Ireland..</p>
 						</div>
 						<div class="Lifesafe-btn service">
-							<a href="services.html">Read More +</a>
+							<a href="services.html#care-home-staffing">Read More +</a>
 						</div>
 					</div>
 				</div>
@@ -354,11 +354,11 @@ right: 0;        left: inherit;
 							</div>
 						</div>
 						<div class="service-content">
-							<h4><a href="services.html">Support Workers for Hostels & Supported Living Facilities</a></h4>
+							<h4><a href="services.html#support-workers">Support Workers for Hostels & Supported Living Facilities</a></h4>
 							<p>We supply experienced Support Workers to hostels and supported living facilities, providing care that is compassionate..</p>
 						</div>
 						<div class="Lifesafe-btn service">
-							<a href="services.html">Read More +</a>
+							<a href="services.html#support-workers">Read More +</a>
 						</div>
 					</div>
 				</div>
@@ -371,11 +371,11 @@ right: 0;        left: inherit;
 							</div>
 						</div>
 						<div class="service-content">
-							<h4><a href="services.html">Registered Nurses, Chefs, Kitchen Assistants, and Cleaning Staff</a></h4>
+							<h4><a href="services.html#ancillary-staff-support">Registered Nurses, Chefs, Kitchen Assistants, and Cleaning Staff</a></h4>
 							<p>We provide chefs, kitchen assistants, and cleaning staff to ensure care homes maintain hygiene, safety..</p>
 						</div>
 						<div class="Lifesafe-btn service">
-							<a href="services.html">Read More +</a>
+							<a href="services.html#ancillary-staff-support">Read More +</a>
 						</div>
 					</div>
 				</div>
@@ -864,9 +864,10 @@ Her leadership ensures:
 													</div>
 													
 <style>
+	.insurance-form-box input{width: 100%;}
 	select{
 		    background: #ffffff;
-    width: 278px;
+    width: 100%;
     height: 51px;
     border-radius: 3px;
     border: 0;
@@ -1121,7 +1122,20 @@ About Health One Group?</h2>
 								<ul>
 								<li class="dropdown"><a href="contact.html" data-toggle="dropdown">Home</a></li>
 									<li class="dropdown"><a href="about.html" data-toggle="dropdown">About Us</a></li>
-									<li class="dropdown"><a href="services.html" data-toggle="dropdown">Services</a></li>
+									<!-- <li class="dropdown"><a href="services.html" data-toggle="dropdown">Services</a></li> -->
+
+
+											<li class="dropdown"><a href="services.html" data-toggle="dropdown">Service <i
+												class="icon-arrow"></i></a>
+										<ul class="dropdown-menu">
+											<!-- <li><a href="services.html">Service</a></li> -->
+											<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
+										<li><a href="services.html#support-workers">Support Workers</a></li>
+										<li><a href="services.html#ancillary-staff-support">Ancillary Staff Support</a></li>
+										</ul>
+									</li>
+
+
 								<li class="dropdown"><a href="career.html" data-toggle="dropdown">Career</a></li>
 								
 									<li class="dropdown"><a href="contact.html" data-toggle="dropdown">Contact Us</a></li>
@@ -1183,9 +1197,9 @@ About Health One Group?</h2>
 						</div>
 						<div class="footer-wiget-menu">
 							<ul>
-								<li><a href="services.html">Care Home Staffing</a></li>
-								<li><a href="services.html">Support Workers</a></li>
-								<li><a href="services.html">Ancillary Staff Support</a></li>
+								<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
+										<li><a href="services.html#support-workers">Support Workers</a></li>
+										<li><a href="services.html#ancillary-staff-support">Ancillary Staff Support</a></li>
 							
 								
 							</ul>
