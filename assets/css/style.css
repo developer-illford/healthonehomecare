@@ -205,11 +205,16 @@ Tags: 	agency, Business Agency, Business Consultant, business optimization, comp
 
 .header-menu ul {
     list-style: none;
-    display: inline-block;
-       /* display: flex; */
+    /* display: inline-block; */
+       display: flex;
     /* gap: 25px;
     margin: 0;
     padding: 0; */
+}
+
+
+.header-menu ul ul {
+display: inline-block;
 }
 
 .header-menu ul li {

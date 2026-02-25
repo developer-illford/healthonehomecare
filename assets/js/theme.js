@@ -75,16 +75,84 @@
 
 
     // Slider
-    $('.banner-carousel').owlCarousel({
+    // $('.banner-carousel').owlCarousel({
+    //     items: 1,
+    //     autoplay: true,
+    //     autoplayTimeout: 5000,
+    //     loop: true,
+    //     animateOut: 'fadeOut',
+    //     dots: false,
+    //     nav: true,
+    //     navText: ["<i class='fa fa-long-arrow-left''></i>", "<i class='fa fa-long-arrow-right''></i>"],
+    // });
+
+
+    //new code 
+
+
+    var owl = $('.banner-carousel');
+    var desktopVideo = document.querySelector('.desktop-video');
+    var mobileVideo = document.querySelector('.mobile-video');
+
+    owl.owlCarousel({
         items: 1,
         autoplay: true,
-        autoplayTimeout: 5000,
-        loop: true,
+        autoplayTimeout: 3000, // image duration
+        loop: false, // IMPORTANT
         animateOut: 'fadeOut',
         dots: false,
         nav: true,
-        navText: ["<i class='fa fa-long-arrow-left''></i>", "<i class='fa fa-long-arrow-right''></i>"],
+        navText: [
+            "<i class='fa fa-long-arrow-left'></i>",
+            "<i class='fa fa-long-arrow-right'></i>"
+        ]
     });
+
+    function getActiveVideo(){
+        return window.innerWidth <= 768 ? mobileVideo : desktopVideo;
+    }
+
+    // When slide changes
+    owl.on('changed.owl.carousel', function(event) {
+
+        var totalItems = event.item.count;
+        var currentIndex = event.item.index;
+
+        // If last slide (video slide)
+        if(currentIndex === totalItems - 1){
+
+            owl.trigger('stop.owl.autoplay');
+
+            var video = getActiveVideo();
+
+            desktopVideo.pause();
+            mobileVideo.pause();
+
+            desktopVideo.currentTime = 0;
+            mobileVideo.currentTime = 0;
+
+            video.play().catch(()=>{});
+
+        }
+    });
+
+    // When video ends
+    function videoEnded(){
+        var video = getActiveVideo();
+        video.pause();
+        video.currentTime = 0;
+
+        owl.trigger('to.owl.carousel', [0, 1000]); // go to first slide
+        owl.trigger('play.owl.autoplay', [3000]);
+    }
+if (desktopVideo) {
+    desktopVideo.addEventListener('ended', videoEnded);
+}
+if (mobileVideo) {
+
+    mobileVideo.addEventListener('ended', videoEnded);
+}
+//end code
 
 
 

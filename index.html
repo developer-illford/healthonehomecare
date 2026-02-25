@@ -253,7 +253,44 @@ select{width: 100% !important;}
 	<!--==================================================-->
 	<!-- Start Banner Area -->
 	<!--==================================================-->
+<style>
+.banner-section{height: 100vh;}
+	.video-slide {
+    position: relative;
+	  overflow: hidden; 
+}
 
+	.video-slide video {
+	   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+      height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
+.desktop-video {
+    display: block;
+}
+
+.mobile-video {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-video {
+        display: none;
+    }
+    .mobile-video {
+        display: block;
+    }
+}
+
+
+
+
+</style>
 	<section class="banner-section">
 		<div class="banner-carousel owl-carousel">
 			<div class="slide-item one">
@@ -273,10 +310,7 @@ select{width: 100% !important;}
 						<div class="Lifesafe-btn slider1">
 							<a href="services.html">Discover More</a>
 						</div>
-						<div class="video-icon">
-							<a class="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true"
-								href="https://youtu.be/jVkBMws_mZw"><i class="bi bi-play"></i></a>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -298,13 +332,28 @@ select{width: 100% !important;}
 						<div class="Lifesafe-btn slider1">
 							<a href="services.html">Discover More</a>
 						</div>
-						<div class="video-icon">
-							<a class="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true"
-								href="https://youtu.be/jVkBMws_mZw"><i class="bi bi-play"></i></a>
-						</div>
+					
 					</div>
 				</div>
 			</div>
+
+ <div class="slide-item video-slide">
+
+
+        <video muted playsinline preload="auto" class="desktop-video">
+            <source src="assets/vid/desk.mp4" type="video/mp4">
+        </video>
+
+        <video muted playsinline preload="auto" class="mobile-video">
+            <source src="assets/vid/mob.mp4" type="video/mp4">
+        </video>
+
+
+
+    </div>
+
+
+
 		</div>
 	</section>
 	<!--==================================================-->
@@ -318,7 +367,7 @@ select{width: 100% !important;}
 		/* .section-main-title h2{margin-bottom: 12px;} */
 	</style>
 
-	<div class="service-area">
+	<div class="service-area" style="padding-top:100px;">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -1033,7 +1082,7 @@ About Health One Group?</h2>
 	<!--==================================================-->
 	<!-- Start Blog Area -->
 	<!--==================================================-->
-	<div class="blog-area">
+	<!-- <div class="blog-area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -1101,7 +1150,7 @@ About Health One Group?</h2>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!--==================================================-->
 	<!-- End Blog Area -->
 	<!--==================================================-->
@@ -1126,7 +1175,7 @@ About Health One Group?</h2>
 							</div>
 							<div class="sidebar-widget-menu">
 								<ul>
-								<li class="dropdown"><a href="contact.html" data-toggle="dropdown" style="color: #a68630;">Home</a></li>
+								<li class="dropdown"><a href="contact.html" data-toggle="dropdown" style="color:#a68630;">Home</a></li>
 									<li class="dropdown"><a href="about.html" data-toggle="dropdown">About Us</a></li>
 									<!-- <li class="dropdown"><a href="services.html" data-toggle="dropdown">Services</a></li> -->
 
