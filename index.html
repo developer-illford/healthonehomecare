@@ -253,6 +253,7 @@ select{width: 100% !important;}
 	<!--==================================================-->
 	<!-- Start Banner Area -->
 	<!--==================================================-->
+
 <style>
 .banner-section{height: 100vh;}
 	.video-slide {
@@ -290,6 +291,74 @@ select{width: 100% !important;}
 
 
 
+/**text***/
+
+
+.video-slide {
+    position: relative;
+    /* height: 100%; */
+}
+
+
+.video-slide video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 2;
+}
+
+/* Text Content */
+.video-slide .container,
+.video-slide .slider-content {
+    position: relative;
+    z-index: 3;
+}
+
+
+.video-slide .slider-content
+{
+top: 50%;
+    transform: translateY(5%);
+}
+.video-slide .slider-main-title h1{
+/* color: #ffffff; */
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    mix-blend-mode: screen;
+}
+.video-slide .slider-discription p{
+	    color: #ffffff;
+}
+
+.video-slide .slider-sub-title h4{
+	color: white;
+	background: transparent;
+	border: 1px solid white;
+}
+
+@media (max-width: 768px) {
+.video-slide .slider-content
+{
+	    top: 50%;
+    transform: translateY(60%);
+}
+
+}
+
 </style>
 	<section class="banner-section">
 		<div class="banner-carousel owl-carousel">
@@ -301,8 +370,8 @@ select{width: 100% !important;}
 							<h4>Welcome to Health One Group</h4>
 						</div>
 						<div class="slider-main-title">
-							<h1>Welcome to Health One Group: 
-								Healthcare Agency</h1>
+							<h1>Your Home. Your Care: 
+								Our Commitment</h1>
 						</div>
 						<div class="slider-discription">
 							<p>At Health One Group Healthcare Agency, we provide compassionate, reliable healthcare and support professionals across Northern Ireland.</p>
@@ -311,28 +380,6 @@ select{width: 100% !important;}
 							<a href="services.html">Discover More</a>
 						</div>
 						
-					</div>
-				</div>
-			</div>
-			<div class="slide-item two">
-				<div class="image-layer" style="background-image: url('assets/images/slider/banner.png');"></div>
-				<div class="container">
-					<div class="slider-content">
-						<div class="slider-sub-title">
-							<h4>Welcome to Health One Group</h4>
-						</div>
-						<div class="slider-main-title">
-							<h1>Welcome to Health One Group: 
-								Healthcare Agency</h1>
-						</div>
-						<div class="slider-discription">
-						<p>At Health One Group Healthcare Agency, we provide compassionate, reliable healthcare and support professionals across Northern Ireland.</p>
-
-						</div>
-						<div class="Lifesafe-btn slider1">
-							<a href="services.html">Discover More</a>
-						</div>
-					
 					</div>
 				</div>
 			</div>
@@ -348,6 +395,25 @@ select{width: 100% !important;}
             <source src="assets/vid/mob.mp4" type="video/mp4">
         </video>
 
+  <div class="video-overlay"></div>
+
+
+    <div class="container">
+        <div class="slider-content">
+            <div class="slider-sub-title">
+                <h4>Welcome to Health One Group</h4>
+            </div>
+            <div class="slider-main-title">
+                <h1>Continuous Supervision. Reduced Falls Risk.</h1>
+            </div>
+            <div class="slider-discription">
+                <p>Care Is More Than Tasks — It’s Meaningful Connection.</p>
+            </div>
+            <!-- <div class="Lifesafe-btn slider1">
+                <a href="services.html">Discover More</a>
+            </div> -->
+        </div>
+    </div>
 
 
     </div>
@@ -356,6 +422,11 @@ select{width: 100% !important;}
 
 		</div>
 	</section>
+
+
+
+
+
 	<!--==================================================-->
 	<!-- End Banner Area -->
 	<!--==================================================-->
