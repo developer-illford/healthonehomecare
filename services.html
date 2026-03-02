@@ -289,6 +289,10 @@ left: 35% !important;
 
 
 <style>
+
+.widget-categories-menu ul li{
+cursor:pointer;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -1057,6 +1061,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", setActiveSection);
     setActiveSection();
+
+
+	document.querySelectorAll('.widget-categories-menu ul li')
+.forEach(function(li) {
+    li.addEventListener('click', function() {
+        var link = this.querySelector('a');
+        if (link) {
+            link.click();
+        }
+    });
+});
 
 });
 </script>
