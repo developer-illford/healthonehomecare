@@ -36,9 +36,9 @@
 
     // Loder  //
     $(function () {
-        setTimeout(function () {
+         setTimeout(function () {
         $('body').addClass('loaded');
-         }, 1000); 
+            }, 1000); 
     });
 
 
@@ -99,7 +99,7 @@
     owl.owlCarousel({
         items: 1,
         autoplay: true,
-        autoplayTimeout: 4000, // image duration
+        autoplayTimeout: 6500, // image duration
         loop: false, // IMPORTANT
         animateOut: 'fadeOut',
         dots: false,
