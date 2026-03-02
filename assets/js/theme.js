@@ -99,7 +99,7 @@
     owl.owlCarousel({
         items: 1,
         autoplay: true,
-        autoplayTimeout: 6500, // image duration
+        autoplayTimeout: 6000, // image duration
         loop: false, // IMPORTANT
         animateOut: 'fadeOut',
         dots: false,
