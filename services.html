@@ -96,6 +96,8 @@ right: 0;        left: inherit;
 	.header-menu ul li.active.spec > a::before{
 left: 35% !important;
 	}
+
+	.sticky-nav{position: relative !important;}
 </style>
 
 </head>
@@ -216,7 +218,8 @@ left: 35% !important;
 										
 										<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
-										<li><a href="services.html#ancillary-staff-support">Ancillary Staff Support</a></li>
+										<li><a href="services.html#ancillary-staff-support">Specilaist 1:1 Care</a></li>
+										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
 										<!-- <li><a href="home-insurance.html">Home Insurance</a></li>
 										<li><a href="travel-insurance.html">Travel Insurance</a></li>
 										<li><a href="marrige-insurance.html">Marrige Insurance</a></li> -->
@@ -289,7 +292,6 @@ left: 35% !important;
 
 
 <style>
-
 .widget-categories-menu ul li{
 cursor:pointer;
 }
@@ -298,12 +300,12 @@ html {
 }
 
 .service-section {
-    scroll-margin-top: 140px;  
+    /*scroll-margin-top: 140px; */ 
 }
 @media (min-width: 992px) {   
     .sticky-sidebar {
         position: sticky;
-        top: 110px;  
+        top: 10px;  
 		 align-self: flex-start;
     }
 }
@@ -378,6 +380,10 @@ html {
     font-size: 30px;
 }
 
+.service-section {
+    scroll-margin-top: 100px; 
+}
+
 }
 
 
@@ -389,39 +395,86 @@ html {
 	<!--==================================================-->
 	<!-- Start Service Details Area -->
 	<!--==================================================-->
+
+
+
 	<div class="service-details-area wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s" style="margin-bottom: 180px;">
 		<div class="container">
 			<div class="row">
+
+				
 				<div class="col-lg-8 col-md-12 order-2 order-lg-1">
 
-
 					<div id="care-home-staffing" class="service-section">
-					<h2 class="section-title11">Care Home Staffing & Specialist 1:1 Care</h2>
-					<p>We supply experienced healthcare assistants and registered nurses to private care homes across Northern Ireland, with a strong focus on high-quality one-to-one care</p>
-					
-					<div class="service-details-title">
-						<h4>1:1 Specialist Care Support</h4>
-					</div>
-					<div class="service-details-thumb">
-						<img src="assets/images/project/service1.png" alt="">
-					</div>
+					<h2 class="section-title11">Care Home Staffing</h2>
+
+
+
+
+
+	<div class="service-list-title">
+<h4>Ancillary Staff Support</h4>
+</div>
+							
 					<div class="service-detials-discription">
-						<p>We provide dedicated one-to-one support for residents requiring enhanced supervision, reassurance, or complex care. Our services include:</p>
-				
+						<p>In addition to care and support staff, we provide:</p>
+						
 							<div class="service-detials-list">
-								<span>Continuous supervision to reduce falls risk</span>
-								<span>Dementia support and reassurance</span>
-								<span>Emotional support for anxious or distressed residents</span>
-								<span>Waking night observation</span>
-								<span>End-of-life companionship and care</span>
+								<span>Chefs and Kitchen Assistants for nutritious meal preparation</span>
+								<span>Cleaning staff to maintain hygiene and safety standards</span>
+								
 								
 							</div>
-							<p>Our personalised approach enhances safety, emotional wellbeing, and overall quality of life.</p>
+							<p>This ensures that care homes and supported living facilities operate smoothly and maintain the highest standards of care, safety, and comfort.</p>
 					</div>
 					<div class="row">
 					
 						<div class="col-lg-6 col-md-6">
 							<div class="service-list-title">
+								<h4>Shift Staffing</h4>
+							</div>
+							<p>We know it can be stressful and difficult to find talented healthcare staff at the drop of the hat. That’s why we’ve modelled the way we work to make sure you get qualified and skilled workers as soon as you need them, 24/7, 365-days a year. The entire process is easy from start-to-finish and once we’ve onboarded you as a client, you’ll be able to get your shifts filled within 15-minutes of making a request.</p>
+							<div class="service-detials-list">
+								<span>Send your requirements to our team on email or over the phone.</span>
+								<span>Get suggestions for staff based nearby to you based on your needs.</span>
+								<span>Once we have the best candidate, we’ll give you their full professional profile.</span>
+								<span>As shifts are completed, they’ll be automatically updated in your profile.</span>
+								<span>Your ongoing shifts will continue to be effectively managed by us.</span>
+							
+							</div>
+							
+						</div>
+
+							<div class="col-lg-6 col-md-6">
+							<div class="service-details-thumb" style="margin-top:45px;">
+								<img src="assets/images/project/service_cook.png" alt="">
+							</div>
+						</div>
+						
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+					<div class="row">
+					
+						<div class="col-lg-6 col-md-6">
+							<div class="service-list-title pt-3">
 								<h4>Activities & Resident Engagement</h4>
 							</div>
 							<p>We believe meaningful engagement is as important as physical care. Our staff provide personalised activities tailored to each resident’s interests and abilities, including:</p>
@@ -458,10 +511,6 @@ html {
 							<p class="pt-3">Our fast and reliable service ensures safe staffing levels and continuity of care.</p>
 					</div>
 				</div>
-
-
-
-
 
 	<div id="support-workers" class="service-section">
 					<h2 class="section-title11">Support Workers for Hostels & Supported Living</h2>
@@ -512,54 +561,58 @@ html {
 				
 				</div>
 
-
-
-
 <div id="ancillary-staff-support" class="service-section">
-					<h2 class="section-title11 title-third-main">Ancillary Staff Support</h2>
+
+
+
+
+
+
+
+
+
+
+
+				
 					
-					
-					
+	
+					<h2 class="section-title11">1:1 Specialist Care Support</h2>
+					<p>We supply experienced healthcare assistants and registered nurses to private care homes across Northern Ireland, with a strong focus on high-quality one-to-one care</p>
+					<div class="service-details-thumb">
+						<img src="assets/images/project/service1.png" alt="">
+					</div>
 					<div class="service-detials-discription">
-						<p>In addition to care and support staff, we provide:</p>
-						
+						<p>We provide dedicated one-to-one support for residents requiring enhanced supervision, reassurance, or complex care. Our services include:</p>
+				
 							<div class="service-detials-list">
-								<span>Chefs and Kitchen Assistants for nutritious meal preparation</span>
-								<span>Cleaning staff to maintain hygiene and safety standards</span>
-								
+								<span>Continuous supervision to reduce falls risk</span>
+								<span>Dementia support and reassurance</span>
+								<span>Emotional support for anxious or distressed residents</span>
+								<span>Waking night observation</span>
+								<span>End-of-life companionship and care</span>
 								
 							</div>
-							<p>This ensures that care homes and supported living facilities operate smoothly and maintain the highest standards of care, safety, and comfort.</p>
+							<p>Our personalised approach enhances safety, emotional wellbeing, and overall quality of life.</p>
 					</div>
-					<div class="row">
-					
-						<div class="col-lg-6 col-md-6">
-							<div class="service-list-title">
-								<h4>Shift Staffing</h4>
-							</div>
-							<p>We know it can be stressful and difficult to find talented healthcare staff at the drop of the hat. That’s why we’ve modelled the way we work to make sure you get qualified and skilled workers as soon as you need them, 24/7, 365-days a year. The entire process is easy from start-to-finish and once we’ve onboarded you as a client, you’ll be able to get your shifts filled within 15-minutes of making a request.</p>
-							<div class="service-detials-list">
-								<span>Send your requirements to our team on email or over the phone.</span>
-								<span>Get suggestions for staff based nearby to you based on your needs.</span>
-								<span>Once we have the best candidate, we’ll give you their full professional profile.</span>
-								<span>As shifts are completed, they’ll be automatically updated in your profile.</span>
-								<span>Your ongoing shifts will continue to be effectively managed by us.</span>
-							
-							</div>
-							
-						</div>
 
 
-							<div class="col-lg-6 col-md-6">
-							<div class="service-details-thumb" style="margin-top:45px;">
-								<img src="assets/images/project/service_cook.png" alt="">
-							</div>
-						</div>
-						
-					</div>
-					<div class="service-list-title pt-20">
-						<h4>Permanent Staffing</h4>
-					</div>
+
+
+
+
+
+				</div>
+
+
+
+
+<div id="permanent-staffing" class="service-section">
+
+
+
+
+<h2 class="section-title11">Permanent Staffing</h2>
+
 					<div class="service-detials-discription">
 						<p>If you’re looking for help with managing your hiring process for permanent roles, we can also help with this easily, the process is short and sweet..</p>
 						<div class="service-detials-list">
@@ -575,7 +628,9 @@ html {
 
 
 
-		<div class="widget-contact-box widget-contact-box-mobile">
+
+
+						<div class="widget-contact-box widget-contact-box-mobile">
 						<div class="widget-contact-title">
 							<h4>Contact withus for
 								any advice</h4>
@@ -593,30 +648,36 @@ html {
 
 
 
+</div>
+
+
+
+
+
+
+
+
+
 
 				</div>
 
 
 
-
-
-
-
-
-
-				</div>
 				<div class="col-lg-4 col-md-8 order-1 order-lg-2">
 					<div class="sticky-sidebar">
 					<div class="widget-categories-box">
 						
 						<div class="widget-categories-menu">
 							<ul>
-								<li class="sidebar-link active"><a href="#care-home-staffing">Care Home Staffing & 1:1 Care<span><i
+								<li class="sidebar-link active"><a href="#care-home-staffing">Care Home Staffing<span><i
 									class="bi bi-chevron-double-right"></i></span></a></li>
 								<li class="sidebar-link"><a href="#support-workers"> Support Workers <span><i
 												class="bi bi-chevron-double-right"></i></span></a></li>
-								<li class="sidebar-link"><a href="#ancillary-staff-support"> Ancillary Staff Support<span><i
+								<li class="sidebar-link"><a href="#ancillary-staff-support">Specilaist 1:1 Care<span><i
 												class="bi bi-chevron-double-right"></i></span></a></li>
+
+								<li class="sidebar-link"><a href="#permanent-staffing">Permanent Staffing<span><i
+												class="bi bi-chevron-double-right"></i></span></a></li>												
 								
 							</ul>
 						</div>
@@ -640,6 +701,14 @@ html {
 			</div>
 		</div>
 	</div>
+
+
+
+
+
+
+
+
 	<!--==================================================-->
 	<!-- End Service Details Area -->
 	<!--==================================================-->
@@ -673,7 +742,8 @@ html {
 											<!-- <li><a href="services.html">Service</a></li> -->
 											<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
-										<li><a href="services.html#ancillary-staff-support">Ancillary Staff Support</a></li>
+										<li><a href="services.html#ancillary-staff-support">Specilaist 1:1 Care</a></li>
+										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
 										</ul>
 									</li>
 								<li class="dropdown"><a href="career.html" data-toggle="dropdown">Career</a></li>
@@ -695,7 +765,7 @@ html {
 								<li class="facebook"><a href="https://www.facebook.com/share/18BxaKnWQa/?mibextid=wwXIfr" target="_block" class="fab fa-facebook-f"></a></li>
 								<!-- <li class="twitter"><a href="#" class="fab fa-instagram"></a></li> -->
 								<!-- <li class="linkedin"><a href="#" class="fab fa-twitter"></a></li> -->
-								<li class="instagram"><a href="https://www.instagram.com/healthonegroup?igsh=MXBmbzc2dzByZGRhYw==" target="_block" class="fab fa-pinterest-p"></a></li>
+								<li class="instagram"><a href="https://www.instagram.com/healthonegroup?igsh=MXBmbzc2dzByZGRhYw==" target="_block" class="fab fa-instagram"></a></li>
 								<!-- <li class="youtube"><a href="#" class="fab fa-linkedin-in"></a></li> -->
 							</ul>
 						</div>
@@ -739,8 +809,8 @@ html {
 							<ul>
 								<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
-										<li><a href="services.html#ancillary-staff-support">Ancillary Staff Support</a></li>
-							
+										<li><a href="services.html#ancillary-staff-support">Specilaist 1:1 Care</a></li>
+										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
 								
 							</ul>
 						</div>
@@ -914,94 +984,6 @@ BT17 0AA
 	<script src="assets/js/script.js"></script>
 
 </body>
-
-
-<script>
-	/*
-document.addEventListener("DOMContentLoaded", function () {
-
-    const sections = document.querySelectorAll(".service-section");
-    const navItems = document.querySelectorAll(".widget-categories-menu ul li");
-
-    window.addEventListener("scroll", function () {
-
-        let currentSection = "";
-
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 180; // adjust for header height
-            const sectionHeight = section.offsetHeight;
-
-            if (window.pageYOffset >= sectionTop) {
-                currentSection = section.getAttribute("id");
-            }
-        });
-
-        navItems.forEach(item => {
-            item.classList.remove("active");
-
-            const link = item.querySelector("a");
-            if (link.getAttribute("href") === "#" + currentSection) {
-                item.classList.add("active");
-            }
-        });
-
-    });
-
-});
-*/
-
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-
-//     const sections = document.querySelectorAll(".service-section");
-//     const navItems = document.querySelectorAll(".widget-categories-menu ul li");
-
-//     function setActiveSection() {
-
-//         let currentSection = "";
-
-//         sections.forEach(section => {
-//             const sectionTop = section.offsetTop - 180; 
-//             const sectionHeight = section.offsetHeight;
-
-//             if (window.pageYOffset >= sectionTop) {
-//                 currentSection = section.getAttribute("id");
-//             }
-//         });
-
-//         navItems.forEach(item => {
-//             item.classList.remove("active");
-
-//             const link = item.querySelector("a");
-//             if (link.getAttribute("href") === "#" + currentSection) {
-//                 item.classList.add("active");
-//             }
-//         });
-
-        
-//         if (!currentSection && navItems.length > 0) {
-//             navItems[0].classList.add("active");
-//         }
-//     }
-
-    
-//     window.addEventListener("scroll", setActiveSection);
-
-  
-//     setActiveSection();
-
-// });
-
-
-
-
-
-
-
-
-
-</script>
 	
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -1020,7 +1002,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (target) {
             setTimeout(function () {
-                const targetPosition = target.offsetTop - headerHeight - 20;
+
+				var targetPosition='';
+
+					if (window.matchMedia("(max-width: 768px)").matches)
+					 targetPosition = target.offsetTop - headerHeight - 100;
+				   else
+			       targetPosition = target.offsetTop;
 
                 window.scrollTo({
                     top: targetPosition,
@@ -1038,7 +1026,14 @@ document.addEventListener("DOMContentLoaded", function () {
         let currentSection = "";
 
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - headerHeight - 50;
+            
+var sectionTop='';
+			if (window.matchMedia("(max-width: 768px)").matches)
+			 sectionTop = section.offsetTop - headerHeight; //030326
+		else 
+		 sectionTop = section.offsetTop; //030326
+
+
 
             if (window.pageYOffset >= sectionTop) {
                 currentSection = section.getAttribute("id");
@@ -1063,7 +1058,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setActiveSection();
 
 
-	document.querySelectorAll('.widget-categories-menu ul li')
+document.querySelectorAll('.widget-categories-menu ul li')
 .forEach(function(li) {
     li.addEventListener('click', function() {
         var link = this.querySelector('a');

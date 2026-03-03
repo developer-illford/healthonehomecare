@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Contact | Health One Home Care</title>
+	<title>Services | Health One Home Care</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -92,6 +92,10 @@ right: 0;        left: inherit;
 		}
 
 	}
+
+	.header-menu ul li.active.spec > a::before{
+left: 35% !important;
+	}
 </style>
 
 </head>
@@ -162,8 +166,7 @@ right: 0;        left: inherit;
 						<h4>Follow on:</h4>
 						<ul>
 							<li><a href="https://www.facebook.com/share/18BxaKnWQa/?mibextid=wwXIfr" target="_block"><i class="fab fa-facebook-f"></i></a></li>
-							<!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
-							<!-- <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li> -->
+				
 							<li><a href="https://www.instagram.com/healthonegroup?igsh=MXBmbzc2dzByZGRhYw==" target="_block"><i class="fab fa-instagram"></i></a></li>
 						</ul>
 					</div>
@@ -205,15 +208,15 @@ right: 0;        left: inherit;
 									</ul>
 								</div>
 							</li> -->
-							<!-- <li><a href="services.html">Services</a></li> -->
-							 		<li><a href="#">Services <i class="bi bi-plus"></i></a>
+							<!-- <li class="active"><a href="services.html">Services</a></li> -->
+
+									<li class="active spec"><a href="#">Services <i class="bi bi-plus"></i></a>
 								<div class="sub-menu">
 									<ul>
 										
-									<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
+										<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
-										<li><a href="services.html#ancillary-staff-support">Specilaist 1:1 Care</a></li>
-										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
+										<li><a href="services.html#ancillary-staff-support">Ancillary Staff Support</a></li>
 										<!-- <li><a href="home-insurance.html">Home Insurance</a></li>
 										<li><a href="travel-insurance.html">Travel Insurance</a></li>
 										<li><a href="marrige-insurance.html">Marrige Insurance</a></li> -->
@@ -222,7 +225,7 @@ right: 0;        left: inherit;
 							</li>
 						
 							<li><a href="career.html">Career</a></li>
-							<li class="active"><a href="contact.html">Contact Us</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
 						</ul>
 						<div class="header-right">
 							<!-- <div class="header-search">
@@ -267,12 +270,12 @@ right: 0;        left: inherit;
 				<div class="col-lg-12 col-md-12">
 					<div class="breatcome-content">
 						<div class="breatcome-title">
-							<h1>Contact</h1>
+							<h1>Our Services</h1>
 						</div>
 						<div class="bratcome-text">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li>Contact</li>
+								<li>Services</li>
 							</ul>
 						</div>
 					</div>
@@ -284,143 +287,365 @@ right: 0;        left: inherit;
 	<!-- End Breatcome Area -->
 	<!--==================================================-->
 
-	<!--==================================================-->
-	<!-- Start Contact Area -->
-	<!--==================================================-->
-	<div class="contact-area wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s">
-		<div class="container">
-			<div class="row contact">
-				<div class="col-lg-4 col-md-12">
-					<div class="contact-single-box">
-						<div class="contact-title">
-							<h4>Contact Informatlon</h4>
-						</div>
-						<div class="contact-items">
-							<div class="contact-icon">
-								<i class="bi bi-geo-alt-fill"></i>
-							</div>
-							<div class="contact-content">
-								<h4>Address</h4>
-								<h6>Health One Group Ltd Healthcare Agency Suite 4, Anna House Upper Dunmurry Lane Belfast BT17 0AA</h6>
-							</div>
-						</div>
-						<div class="contact-items">
-							<div class="contact-icon">
-								<i class="bi bi-phone-fill"></i>
-							</div>
-							<div class="contact-content">
-								<h4>Contact Namber</h4>
-								<h6><a href="tel:(028) 96 227356" style="text-decoration:none;">(028) 96 227356</a></h6>
-							</div>
-						</div>
-						<div class="contact-items">
-							<div class="contact-icon">
-								<i class="bi bi-envelope-fill"></i>
-							</div>
-							<div class="contact-content">
-								<h4>Email Us</h4>
-								<h6><a href="mailto:info@healthonegroup.co.uk" style="text-decoration:none;">info@healthonegroup.co.uk</a></h6>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-8 col-md-12">
-					<div class="contact-box">
-						<div class="contact-box-title">
-							<h4>Get A Quote</h4>
-						</div>
-						<style>
-							form select{
-							width: 100%;
-    height: 64px;
-    background: #ffffff;
-    border: none;
-    border-radius: 3px;
-    padding: 0 17px;
-    margin-bottom: 25px;
-	    color: #67696d;
-							}
-							form textarea{
-	 background: #ffffff;
+
+<style>
+.widget-categories-menu ul li{
+cursor:pointer;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.service-section {
+    scroll-margin-top: 140px;  
+}
+@media (min-width: 992px) {   
+    .sticky-sidebar {
+        position: sticky;
+        top: 110px;  
+		 align-self: flex-start;
+    }
+}
+
+.service-details-title{padding-bottom: 15px;}
+
+.service-details-title h4 {
+    font-size: 30px;
+}
+
+.service-details-area h2 {
+    font-size: 36px;
+	    margin-bottom: 20px;
+}
+
+
+
+.section-title11 {
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #1c1c1c;
+}
+
+.section-title11::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #0b2e4a;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+.widget-categories-menu ul li.active::after {
     width: 100%;
-    height: 185px;
-    border-radius: 3px;
-    border: 0;
-    outline: 0;
-    padding: 0 20px;
-    color: #FFF;
-    margin-bottom: 25px;
-							}
-						</style>
-						<form method="POST" id="it-form">
-							<div class="row">
-								<div class="col-lg-6 col-md-6">
-									<div class="form-box">
-										<input type="text" name="name" placeholder="Your Name">
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6">
-									<div class="form-box">
-										<input type="text" name="phone" placeholder="Phone Numbar">
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6">
-									<div class="form-box">
-										<input type="text" name="email" placeholder="Email Address">
-									</div>
-								</div>
-								
-								<div class="col-lg-6">
-														<div class="form-box">
-															
-															<select required name="input_service" id="ff_3_input_service" class="ff-el-form-control" data-name="input_service" data-calc_value="0" aria-invalid="false" aria-required="true"><option value="">- Select Option -</option><option value="Clinical Staff">Clinical Staff</option><option value="Efficient Office Team">Efficient Office Team</option><option value="Nurses">Nurses</option><option value="Occupational Therapists">Occupational Therapists</option><option value="Care Staff">Care Staff</option><option value="Caring Interventions">Caring Interventions</option></select>
-														</div>
-													</div>
+}
 
-								<div class="col-lg-12">
-									<div class="form-box">
-									<textarea required aria-invalid="false" aria-required="true" name="input_message" id="ff_3_input_message" class="ff-el-form-control" placeholder="Message" rows="5" cols="2" data-name="input_message"></textarea>
-									</div>
-								</div>
-							
-								<div class="col-lg-12 col-md-12">
-									<div class="form-box-button">
-										<button type="Submit"> Get a quote</button>
-									</div>
-								</div>
+.widget-categories-menu ul li.active a{
+	color: white;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+.widget-categories-menu ul li a{
+
+	    font-size: 20px !important;
+}
+
+.widget-contact-box{
+	display: none;
+}
+.widget-contact-box-mobile{
+	display: block !important;
+
+}
+
+.widget-contact-box-mobile{
+	display: none;
+}
+.title-third-main{
+	padding-top: 30px;
+}
+
+.service-details-area h2 {
+    font-size: 30px;
+}
+
+}
+
+
+.widget-contact-box-mobile{
+	display: none;
+}
+</style>
+
+	<!--==================================================-->
+	<!-- Start Service Details Area -->
+	<!--==================================================-->
+	<div class="service-details-area wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s" style="margin-bottom: 180px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-12 order-2 order-lg-1">
+
+
+					<div id="care-home-staffing" class="service-section">
+					<h2 class="section-title11">Care Home Staffing & Specialist 1:1 Care</h2>
+					<p>We supply experienced healthcare assistants and registered nurses to private care homes across Northern Ireland, with a strong focus on high-quality one-to-one care</p>
+					
+					<div class="service-details-title">
+						<h4>1:1 Specialist Care Support</h4>
+					</div>
+					<div class="service-details-thumb">
+						<img src="assets/images/project/service1.png" alt="">
+					</div>
+					<div class="service-detials-discription">
+						<p>We provide dedicated one-to-one support for residents requiring enhanced supervision, reassurance, or complex care. Our services include:</p>
+				
+							<div class="service-detials-list">
+								<span>Continuous supervision to reduce falls risk</span>
+								<span>Dementia support and reassurance</span>
+								<span>Emotional support for anxious or distressed residents</span>
+								<span>Waking night observation</span>
+								<span>End-of-life companionship and care</span>
+								
 							</div>
-						</form>
-						<div id="status"></div>
+							<p>Our personalised approach enhances safety, emotional wellbeing, and overall quality of life.</p>
+					</div>
+					<div class="row">
+					
+						<div class="col-lg-6 col-md-6">
+							<div class="service-list-title">
+								<h4>Activities & Resident Engagement</h4>
+							</div>
+							<p>We believe meaningful engagement is as important as physical care. Our staff provide personalised activities tailored to each resident’s interests and abilities, including:</p>
+							<div class="service-detials-list">
+								<span>Reminiscence sessions</span>
+								<span>Reading and conversation</span>
+								<span>Arts and crafts</span>
+								<span>Music and singing</span>
+								<span>Gentle exercises</span>
+								<span>Games and cognitive stimulation</span>
+								<span>One-to-one social interaction</span>
+							</div>
+							<p>This approach helps reduce isolation and anxiety while promoting dignity, confidence, and joy.</p>
+						</div>
+							<div class="col-lg-6 col-md-6">
+							<div class="service-details-thumb">
+								<img src="assets/images/project/service2.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="service-details-title">
+						<h4>Short-Notice & Emergency Cover</h4>
+					</div>
+					<div class="service-detials-discription">
+						<p>We respond quickly and professionally to urgent staffing needs, offering:</p>
+						<div class="service-detials-list">
+								<span>Same-day emergency cover</span>
+								<span>Short-term placements</span>
+								<span>Ongoing rota support</span>
+								<span>Day, night, and weekend shifts</span>
+								
+							</div>
+						
+							<p class="pt-3">Our fast and reliable service ensures safe staffing levels and continuity of care.</p>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<!--==================================================-->
-	<!-- End Contact Area -->
-	<!--==================================================-->
 
-	<!--==================================================-->
-	<!-- Start map Area -->
-	<!--==================================================-->
 
-	<div class="map-area wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
-		<div class="container-fluid p-0">
-			<div class="row g-0">
-				<div class="col-lg-12 col-md-12">
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2313.882831403698!2d-6.0053436!3d54.5531909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x63c3c66db6a2f66b%3A0x4368b3de6b16fae5!2sHealth%20One%20Group%20Agency!5e0!3m2!1sen!2sin!4v1771834932257!5m2!1sen!2sin"
-						width="100%" height="608" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+	<div id="support-workers" class="service-section">
+					<h2 class="section-title11">Support Workers for Hostels & Supported Living</h2>
+					<p>We supply experienced Support Workers to hostels and supported living facilities, providing care that is compassionate, resilient, and independence focused.</p>
+					
+					<div class="service-details-title">
+						<h4>The Role of Our Support Workers</h4>
+					</div>
+					<div class="service-details-thumb">
+						<img src="assets/images/project/service3.png" alt="">
+					</div>
+					<div class="service-detials-discription">
+						
+							<p>Our staff support individuals experiencing:</p>
+							<div class="service-detials-list">
+								<span>Homelessness</span>
+								<span>Mental health challenges</span>
+								<span>Learning disabilities</span>
+								<span>Substance recovery needs</span>
+								<span>Social vulnerability</span>
+								
+							</div>
+							
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<div class="service-details-thumb">
+								<img src="assets/images/project/service4.png" alt="">
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6">
+							<div class="service-list-title">
+								
+							</div>
+							<p>Their responsibilities include:</p>
+							<div class="service-detials-list">
+								<span>Providing practical daily living support</span>
+								<span>Encouraging structure and positive routines</span>
+								<span>Offering emotional reassurance and motivation</span>
+								<span>Supporting attendance at appointments</span>
+								<span>Promoting independence and life skills</span>
+								<span>Maintaining professional boundaries and safeguarding</span>
+								<span>Our aim is to empower individuals to build confidence, stability, and long-term independence.</span>
+							</div>
+							
+						</div>
+					</div>
+				
+				</div>
+
+
+
+
+<div id="ancillary-staff-support" class="service-section">
+					<h2 class="section-title11 title-third-main">Ancillary Staff Support</h2>
+					
+					
+					
+					<div class="service-detials-discription">
+						<p>In addition to care and support staff, we provide:</p>
+						
+							<div class="service-detials-list">
+								<span>Chefs and Kitchen Assistants for nutritious meal preparation</span>
+								<span>Cleaning staff to maintain hygiene and safety standards</span>
+								
+								
+							</div>
+							<p>This ensures that care homes and supported living facilities operate smoothly and maintain the highest standards of care, safety, and comfort.</p>
+					</div>
+					<div class="row">
+					
+						<div class="col-lg-6 col-md-6">
+							<div class="service-list-title">
+								<h4>Shift Staffing</h4>
+							</div>
+							<p>We know it can be stressful and difficult to find talented healthcare staff at the drop of the hat. That’s why we’ve modelled the way we work to make sure you get qualified and skilled workers as soon as you need them, 24/7, 365-days a year. The entire process is easy from start-to-finish and once we’ve onboarded you as a client, you’ll be able to get your shifts filled within 15-minutes of making a request.</p>
+							<div class="service-detials-list">
+								<span>Send your requirements to our team on email or over the phone.</span>
+								<span>Get suggestions for staff based nearby to you based on your needs.</span>
+								<span>Once we have the best candidate, we’ll give you their full professional profile.</span>
+								<span>As shifts are completed, they’ll be automatically updated in your profile.</span>
+								<span>Your ongoing shifts will continue to be effectively managed by us.</span>
+							
+							</div>
+							
+						</div>
+
+
+							<div class="col-lg-6 col-md-6">
+							<div class="service-details-thumb" style="margin-top:45px;">
+								<img src="assets/images/project/service_cook.png" alt="">
+							</div>
+						</div>
+						
+					</div>
+					<div class="service-list-title pt-20">
+						<h4>Permanent Staffing</h4>
+					</div>
+					<div class="service-detials-discription">
+						<p>If you’re looking for help with managing your hiring process for permanent roles, we can also help with this easily, the process is short and sweet..</p>
+						<div class="service-detials-list">
+								<span>Give us all of the details about the role.</span>
+								<span>We’ll help you to write the job advert to entice candidates.</span>
+								<span>Let us do the heavy lifting of advertising your role for you in our marketing channels.</span>
+								<span>We’ll then shortlist the best candidates and arrange interviews.</span>
+								<span>Now, you have the perfect person to fill your vacancy.</span>
+							</div>
+						
+							<p class="pt-3">If you’re ready to find your next team of healthcare professionals to support your organisation, arrange an appointment with us and you’ll be in the safest possible hands.</p>
+					</div>
+
+
+
+		<div class="widget-contact-box widget-contact-box-mobile">
+						<div class="widget-contact-title">
+							<h4>Contact withus for
+								any advice</h4>
+						</div>
+						<div class="widget-contact-icon">
+							<img src="assets/images/service/service-details-icon.jpg" alt="">
+						</div>
+						<div class="widget-contact-content">
+							<h6>Need help? Talk to an expert</h6>
+							<h4><a href="tel:(028) 96 227356" style="text-decoration: none;">(028) 96 227356</a></h4>
+						</div>
+					</div>
+
+
+
+
+
+
+				</div>
+
+
+
+
+
+
+
+
+
+				</div>
+				<div class="col-lg-4 col-md-8 order-1 order-lg-2">
+					<div class="sticky-sidebar">
+					<div class="widget-categories-box">
+						
+						<div class="widget-categories-menu">
+							<ul>
+								<li class="sidebar-link active"><a href="#care-home-staffing">Care Home Staffing & 1:1 Care<span><i
+									class="bi bi-chevron-double-right"></i></span></a></li>
+								<li class="sidebar-link"><a href="#support-workers"> Support Workers <span><i
+												class="bi bi-chevron-double-right"></i></span></a></li>
+								<li class="sidebar-link"><a href="#ancillary-staff-support"> Ancillary Staff Support<span><i
+												class="bi bi-chevron-double-right"></i></span></a></li>
+								
+							</ul>
+						</div>
+					</div>
+					<div class="widget-contact-box">
+						<div class="widget-contact-title">
+							<h4>Contact withus for
+								any advice</h4>
+						</div>
+						<div class="widget-contact-icon">
+							<img src="assets/images/service/service-details-icon.jpg" alt="">
+						</div>
+						<div class="widget-contact-content">
+							<h6>Need help? Talk to an expert</h6>
+							<h4><a href="tel:(028) 96 227356" style="text-decoration: none;">(028) 96 227356</a></h4>
+						</div>
+					</div>
+				
+				</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!--==================================================-->
+	<!-- End Service Details Area -->
+	<!--==================================================-->
 
-	<!--==================================================-->
-	<!-- End map Area -->
-	<!--==================================================-->
 
-	<!--==================================================-->
+
+<!--==================================================-->
 	<!-- Start Sidebar Area -->
 	<!--==================================================-->
 	<div class="sidebar-group info-group">
@@ -441,19 +666,18 @@ right: 0;        left: inherit;
 								<ul>
 								<li class="dropdown"><a href="index.html" data-toggle="dropdown">Home</a></li>
 									<li class="dropdown"><a href="about.html" data-toggle="dropdown">About Us</a></li>
-									<li class="dropdown"><a href="services.html" data-toggle="dropdown">Service <i
+										<li class="dropdown"><a href="services.html" data-toggle="dropdown" style="color:#a68630;">Service <i
 												class="icon-arrow"></i></a>
 										<ul class="dropdown-menu">
 											<!-- <li><a href="services.html">Service</a></li> -->
 											<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
-										<li><a href="services.html#ancillary-staff-support">Specilaist 1:1 Care</a></li>
-										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
+										<li><a href="services.html#ancillary-staff-support">Ancillary Staff Support</a></li>
 										</ul>
 									</li>
 								<li class="dropdown"><a href="career.html" data-toggle="dropdown">Career</a></li>
 								
-									<li class="dropdown"><a href="contact.html" data-toggle="dropdown" style="color:#a68630;">Contact Us</a></li>
+									<li class="dropdown"><a href="contact.html" data-toggle="dropdown">Contact Us</a></li>
 								</ul>
 							</div>
 							<div class="contact-info">
@@ -467,10 +691,10 @@ right: 0;        left: inherit;
 								</ul>
 							</div>
 							<ul class="social-box">
-								<li class="facebook"><a href="https://www.facebook.com/share/18BxaKnWQa/?mibextid=wwXIfr" class="fab fa-facebook-f"></a></li>
-								<li class="twitter"><a href="https://www.instagram.com/healthonegroup?igsh=MXBmbzc2dzByZGRhYw==" class="fab fa-instagram"></a></li>
+								<li class="facebook"><a href="https://www.facebook.com/share/18BxaKnWQa/?mibextid=wwXIfr" target="_block" class="fab fa-facebook-f"></a></li>
+								<!-- <li class="twitter"><a href="#" class="fab fa-instagram"></a></li> -->
 								<!-- <li class="linkedin"><a href="#" class="fab fa-twitter"></a></li> -->
-								<!-- <li class="instagram"><a href="#" class="fab fa-pinterest-p"></a></li> -->
+								<li class="instagram"><a href="https://www.instagram.com/healthonegroup?igsh=MXBmbzc2dzByZGRhYw==" target="_block" class="fab fa-instagram"></a></li>
 								<!-- <li class="youtube"><a href="#" class="fab fa-linkedin-in"></a></li> -->
 							</ul>
 						</div>
@@ -514,8 +738,7 @@ right: 0;        left: inherit;
 							<ul>
 								<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
-										<li><a href="services.html#ancillary-staff-support">Specilaist 1:1 Care</a></li>
-										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
+										<li><a href="services.html#ancillary-staff-support">Ancillary Staff Support</a></li>
 							
 								
 							</ul>
@@ -532,10 +755,10 @@ right: 0;        left: inherit;
 						</div>
 						<div class="footer-social">
 							<ul>
-								<li><a href="https://www.facebook.com/share/18BxaKnWQa/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="https://www.facebook.com/share/18BxaKnWQa/?mibextid=wwXIfr" target="_block"><i class="fab fa-facebook-f"></i></a></li>
 								<!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
 								<!-- <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li> -->
-								<li><a href="https://www.instagram.com/healthonegroup?igsh=MXBmbzc2dzByZGRhYw=="><i class="fab fa-instagram"></i></a></li>
+								<li><a href="https://www.instagram.com/healthonegroup?igsh=MXBmbzc2dzByZGRhYw==" target="_block"><i class="fab fa-instagram"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -691,4 +914,164 @@ BT17 0AA
 
 </body>
 
+
+<script>
+	/*
+document.addEventListener("DOMContentLoaded", function () {
+
+    const sections = document.querySelectorAll(".service-section");
+    const navItems = document.querySelectorAll(".widget-categories-menu ul li");
+
+    window.addEventListener("scroll", function () {
+
+        let currentSection = "";
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 180; // adjust for header height
+            const sectionHeight = section.offsetHeight;
+
+            if (window.pageYOffset >= sectionTop) {
+                currentSection = section.getAttribute("id");
+            }
+        });
+
+        navItems.forEach(item => {
+            item.classList.remove("active");
+
+            const link = item.querySelector("a");
+            if (link.getAttribute("href") === "#" + currentSection) {
+                item.classList.add("active");
+            }
+        });
+
+    });
+
+});
+*/
+
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+
+//     const sections = document.querySelectorAll(".service-section");
+//     const navItems = document.querySelectorAll(".widget-categories-menu ul li");
+
+//     function setActiveSection() {
+
+//         let currentSection = "";
+
+//         sections.forEach(section => {
+//             const sectionTop = section.offsetTop - 180; 
+//             const sectionHeight = section.offsetHeight;
+
+//             if (window.pageYOffset >= sectionTop) {
+//                 currentSection = section.getAttribute("id");
+//             }
+//         });
+
+//         navItems.forEach(item => {
+//             item.classList.remove("active");
+
+//             const link = item.querySelector("a");
+//             if (link.getAttribute("href") === "#" + currentSection) {
+//                 item.classList.add("active");
+//             }
+//         });
+
+        
+//         if (!currentSection && navItems.length > 0) {
+//             navItems[0].classList.add("active");
+//         }
+//     }
+
+    
+//     window.addEventListener("scroll", setActiveSection);
+
+  
+//     setActiveSection();
+
+// });
+
+
+
+
+
+
+
+
+
+</script>
+	
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const sections = document.querySelectorAll(".service-section");
+    const navItems = document.querySelectorAll(".widget-categories-menu ul li");
+    const header = document.querySelector("header"); // change if different selector
+
+    const headerHeight = header ? header.offsetHeight : 120;
+
+    /* ==========================================
+       FIX HASH POSITION ON PAGE LOAD
+    ========================================== */
+    if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+
+        if (target) {
+            setTimeout(function () {
+                const targetPosition = target.offsetTop - headerHeight - 20;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: "smooth"
+                });
+            }, 10);
+        }
+    }
+
+    /* ==========================================
+       SCROLL SPY
+    ========================================== */
+    function setActiveSection() {
+
+        let currentSection = "";
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - headerHeight - 50;
+
+            if (window.pageYOffset >= sectionTop) {
+                currentSection = section.getAttribute("id");
+            }
+        });
+
+        navItems.forEach(item => {
+            item.classList.remove("active");
+
+            const link = item.querySelector("a");
+            if (link.getAttribute("href") === "#" + currentSection) {
+                item.classList.add("active");
+            }
+        });
+
+        if (!currentSection && navItems.length > 0) {
+            navItems[0].classList.add("active");
+        }
+    }
+
+    window.addEventListener("scroll", setActiveSection);
+    setActiveSection();
+
+
+document.querySelectorAll('.widget-categories-menu ul li')
+.forEach(function(li) {
+    li.addEventListener('click', function() {
+        var link = this.querySelector('a');
+        if (link) {
+            link.click();
+        }
+    });
+});
+
+});
+</script>
 </html>
