@@ -986,62 +986,71 @@ BT17 0AA
 	<!-- scroll js -->
 	<script src="assets/js/script.js"></script>
 
-</body>
-	
-<script>
-	if ('scrollRestoration' in history) {
+
+	<script>
+/* ==========================================================
+   PREVENT BROWSER AUTO SCROLL RESTORE
+========================================================== */
+if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
 }
 
-//document.addEventListener("DOMContentLoaded", function () {
 window.addEventListener("load", function () {
 
     const sections = document.querySelectorAll(".service-section");
     const navItems = document.querySelectorAll(".widget-categories-menu ul li");
-    const header = document.querySelector("header"); // change if different selector
+    const header = document.querySelector("header");
 
-    const headerHeight = header ? header.offsetHeight : 120;
+    function getHeaderHeight() {
+        return header ? header.offsetHeight : 120;
+    }
 
-    /* ==========================================
-       FIX HASH POSITION ON PAGE LOAD
-    ========================================== */
+    /* ==========================================================
+       FIX HASH POSITION ON PAGE LOAD (LIVE SAFE VERSION)
+    ========================================================== */
     if (window.location.hash) {
-        const target = document.querySelector(window.location.hash);
+
+        const hash = window.location.hash;
+        const target = document.querySelector(hash);
 
         if (target) {
+
+            // Remove hash to prevent browser auto jump
+            history.replaceState(null, null, window.location.pathname);
+
+            // Wait for theme / animations to finish
             setTimeout(function () {
 
-				var targetPosition='';
-
-					if (window.matchMedia("(max-width: 768px)").matches)
-					 targetPosition = target.offsetTop - headerHeight - 100;
-				   else
-			       targetPosition = target.offsetTop;
+                const y =
+                    target.getBoundingClientRect().top +
+                    window.pageYOffset -
+                    getHeaderHeight() - 20;
 
                 window.scrollTo({
-                    top: targetPosition,
-                    behavior: "smooth"
+                    top: y,
+                    behavior: "auto" // DO NOT use smooth here
                 });
-            }, 10);
+
+                // Add hash back
+                history.replaceState(null, null, hash);
+
+            }, 400); // 400ms safe for live server
         }
     }
 
-    /* ==========================================
+    /* ==========================================================
        SCROLL SPY
-    ========================================== */
+    ========================================================== */
     function setActiveSection() {
 
         let currentSection = "";
 
         sections.forEach(section => {
-            
-var sectionTop='';
-			if (window.matchMedia("(max-width: 768px)").matches)
-			 sectionTop = section.offsetTop - headerHeight; //030326
-		else 
-		 sectionTop = section.offsetTop; //030326
 
-
+            const sectionTop =
+                section.getBoundingClientRect().top +
+                window.pageYOffset -
+                getHeaderHeight() - 50;
 
             if (window.pageYOffset >= sectionTop) {
                 currentSection = section.getAttribute("id");
@@ -1052,7 +1061,7 @@ var sectionTop='';
             item.classList.remove("active");
 
             const link = item.querySelector("a");
-            if (link.getAttribute("href") === "#" + currentSection) {
+            if (link && link.getAttribute("href") === "#" + currentSection) {
                 item.classList.add("active");
             }
         });
@@ -1065,17 +1074,39 @@ var sectionTop='';
     window.addEventListener("scroll", setActiveSection);
     setActiveSection();
 
+    /* ==========================================================
+       CLICK HANDLER (SMOOTH SCROLL WITH OFFSET)
+    ========================================================== */
+    document.querySelectorAll('.widget-categories-menu ul li a')
+    .forEach(function(link) {
 
-document.querySelectorAll('.widget-categories-menu ul li')
-.forEach(function(li) {
-    li.addEventListener('click', function() {
-        var link = this.querySelector('a');
-        if (link) {
-            link.click();
-        }
+        link.addEventListener('click', function(e) {
+
+            const target = document.querySelector(this.getAttribute("href"));
+
+            if (target) {
+                e.preventDefault();
+
+                const y =
+                    target.getBoundingClientRect().top +
+                    window.pageYOffset -
+                    getHeaderHeight() - 20;
+
+                window.scrollTo({
+                    top: y,
+                    behavior: "smooth"
+                });
+
+                history.replaceState(null, null, this.getAttribute("href"));
+            }
+        });
+
     });
-});
 
 });
 </script>
+
+
+</body>
+	
 </html>
