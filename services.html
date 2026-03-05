@@ -989,7 +989,12 @@ BT17 0AA
 </body>
 	
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+	if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+//document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
 
     const sections = document.querySelectorAll(".service-section");
     const navItems = document.querySelectorAll(".widget-categories-menu ul li");
