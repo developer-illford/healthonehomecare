@@ -191,7 +191,18 @@ right: 0;        left: inherit;
 					<div class="header-menu">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About Us</a></li>
+								<li><a href="about.html">About Us  <i class="bi bi-plus"></i></a>
+								<div class="sub-menu">
+									<ul>
+										
+								<li><a href="about.html#overview">Overview</a></li>
+										<li><a href="about.html#why-choose-us">Why Choose Us</a></li>
+										<li><a href="about.html#flexible-staffing-solutions">Flexible Staffing Solutions</a></li>
+										
+										
+									</ul>
+								</div>
+							</li>
 							<!-- <li><a href="#">Services <i class="bi bi-plus"></i></a>
 								<div class="sub-menu">
 									<ul>
@@ -213,6 +224,7 @@ right: 0;        left: inherit;
 									<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
 										<li><a href="services.html#specialist-one-to-one-care">Specilaist 1:1 Care</a></li>
+										<li><a href="services.html#domiciliary-care-services">Domiciliary Care Services</a></li>
 										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
 										<!-- <li><a href="home-insurance.html">Home Insurance</a></li>
 										<li><a href="travel-insurance.html">Travel Insurance</a></li>
@@ -440,7 +452,14 @@ right: 0;        left: inherit;
 							<div class="sidebar-widget-menu">
 								<ul>
 								<li class="dropdown"><a href="index.html" data-toggle="dropdown">Home</a></li>
-									<li class="dropdown"><a href="about.html" data-toggle="dropdown">About Us</a></li>
+											<li class="dropdown"><a href="about.html" data-toggle="dropdown">About Us<i
+												class="icon-arrow"></i></a>
+										<ul class="dropdown-menu">
+										<li><a href="about.html#overview">Overview</a></li>
+										<li><a href="about.html#why-choose-us">Why Choose Us</a></li>
+										<li><a href="about.html#flexible-staffing-solutions">Flexible Staffing Solutions</a></li>
+										</ul>
+									</li>
 									<li class="dropdown"><a href="services.html" data-toggle="dropdown">Service <i
 												class="icon-arrow"></i></a>
 										<ul class="dropdown-menu">
@@ -448,6 +467,7 @@ right: 0;        left: inherit;
 											<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
 										<li><a href="services.html#specialist-one-to-one-care">Specilaist 1:1 Care</a></li>
+										<li><a href="services.html#domiciliary-care-services">Domiciliary Care Services</a></li>
 										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
 										</ul>
 									</li>
@@ -515,6 +535,7 @@ right: 0;        left: inherit;
 								<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
 										<li><a href="services.html#specialist-one-to-one-care">Specilaist 1:1 Care</a></li>
+										<li><a href="services.html#domiciliary-care-services">Domiciliary Care Services</a></li>
 										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
 							
 								
@@ -688,7 +709,21 @@ BT17 0AA
 
 	<!-- scroll js -->
 	<script src="assets/js/script.js"></script>
+<script>
+$('.sidebar-widget-menu ul li a[href="about.html"]').click(function (e) {
+    e.preventDefault();
 
+    let serviceLink = $('.sidebar-widget-menu ul li a[href="services.html"]');
+    let serviceLi = serviceLink.closest('li');
+
+    // check if service is already open
+    let isServiceOpen = serviceLi.find('.dropdown-menu').is(':visible');
+
+    if (isServiceOpen) {
+        serviceLink.trigger('click');
+    }
+});
+</script>
 </body>
 
 </html>

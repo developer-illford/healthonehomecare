@@ -191,7 +191,18 @@ right: 0;        left: inherit;
 					<div class="header-menu">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li class="active"><a href="about.html">About Us</a></li>
+							<li class="active"><a href="about.html">About Us  <i class="bi bi-plus"></i></a>
+								<div class="sub-menu">
+									<ul>
+										
+								<li><a href="about.html#overview">Overview</a></li>
+										<li><a href="about.html#why-choose-us">Why Choose Us</a></li>
+										<li><a href="about.html#flexible-staffing-solutions">Flexible Staffing Solutions</a></li>
+										
+										
+									</ul>
+								</div>
+							</li>
 							<!-- <li><a href="#">Services <i class="bi bi-plus"></i></a>
 								<div class="sub-menu">
 									<ul>
@@ -212,6 +223,7 @@ right: 0;        left: inherit;
 								<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
 										<li><a href="services.html#specialist-one-to-one-care">Specilaist 1:1 Care</a></li>
+										<li><a href="services.html#domiciliary-care-services">Domiciliary Care Services</a></li>
 										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
 										<!-- <li><a href="home-insurance.html">Home Insurance</a></li>
 										<li><a href="travel-insurance.html">Travel Insurance</a></li>
@@ -289,7 +301,7 @@ right: 0;        left: inherit;
 	<!--==================================================-->
 	<!-- Start About Area -->
 	<!--==================================================-->
-	<div class="about-area inner-page">
+	<div class="about-area inner-page" id="overview">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5 col-md-12">
@@ -306,7 +318,7 @@ right: 0;        left: inherit;
 							<h2>Supporting Care Homes with Skilled and Compassionate Staff</h2>
 						</div>
 					</div>
-					<div class="about-discription wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
+					<div class="about-discription wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s" >
 						<p>Our agency was established with the goal of helping care homes across Northern Ireland maintain safe, efficient, and high-quality care environments. We understand the challenges care providers face when dealing with staff shortages, increasing care demands, and the need for skilled professionals.
 </p>
 <p>By working closely with care home managers and healthcare professionals, we provide staffing solutions that are flexible, reliable, and tailored to each facility’s requirements.
@@ -716,7 +728,7 @@ Returning to my dream job as a senior support worker with Health One Group Healt
 		.section-main-title h2{    font-size: 38px;}
 		.choose-us-area{padding-bottom:60px;}
 	</style>
-	<div class="choose-us-area">
+	<div class="choose-us-area" id="why-choose-us">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-6 col-md-12">
@@ -825,7 +837,7 @@ Returning to my dream job as a senior support worker with Health One Group Healt
 <!---------flecible area------->
 
 
-<section class="staffing-solutions-section">
+<section class="staffing-solutions-section" id="flexible-staffing-solutions">
     <div class="container">
         
         <div class="staffing-card">
@@ -1354,7 +1366,14 @@ About Health One Group?</h2>
 							<div class="sidebar-widget-menu">
 								<ul>
 								<li class="dropdown"><a href="index.html" data-toggle="dropdown">Home</a></li>
-									<li class="dropdown"><a href="about.html" data-toggle="dropdown" style="color:#a68630;">About Us</a></li>
+									<li class="dropdown"><a href="about.html" data-toggle="dropdown" style="color:#a68630;">About Us<i
+												class="icon-arrow"></i></a>
+										<ul class="dropdown-menu">
+										<li><a href="about.html#overview">Overview</a></li>
+										<li><a href="about.html#why-choose-us">Why Choose Us</a></li>
+										<li><a href="about.html#flexible-staffing-solutions">Flexible Staffing Solutions</a></li>
+										</ul>
+									</li>
 									<li class="dropdown"><a href="services.html" data-toggle="dropdown">Service <i
 												class="icon-arrow"></i></a>
 										<ul class="dropdown-menu">
@@ -1362,6 +1381,7 @@ About Health One Group?</h2>
 											<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
 										<li><a href="services.html#specialist-one-to-one-care">Specilaist 1:1 Care</a></li>
+										<li><a href="services.html#domiciliary-care-services">Domiciliary Care Services</a></li>
 										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
 										</ul>
 									</li>
@@ -1433,6 +1453,7 @@ About Health One Group?</h2>
 											<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
 										<li><a href="services.html#specialist-one-to-one-care">Specilaist 1:1 Care</a></li>
+										<li><a href="services.html#domiciliary-care-services">Domiciliary Care Services</a></li>
 										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
 							</ul>
 						</div>
@@ -1604,6 +1625,22 @@ BT17 0AA
 
 	<!-- scroll js -->
 	<script src="assets/js/script.js"></script>
+
+<script>
+$('.sidebar-widget-menu ul li a[href="about.html"]').click(function (e) {
+    e.preventDefault();
+
+    let serviceLink = $('.sidebar-widget-menu ul li a[href="services.html"]');
+    let serviceLi = serviceLink.closest('li');
+
+    // check if service is already open
+    let isServiceOpen = serviceLi.find('.dropdown-menu').is(':visible');
+
+    if (isServiceOpen) {
+        serviceLink.trigger('click');
+    }
+});
+</script>
 
 </body>
 
