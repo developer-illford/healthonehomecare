@@ -443,7 +443,7 @@ color: #ffffff;
 	<!--==================================================-->
 	<!-- End Banner Area -->
 	<!--==================================================-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 	<style>
 		.service-area .service-icon{display: none;}
 		.service-content p{    margin: 20px 0 25px;}
@@ -451,32 +451,6 @@ color: #ffffff;
 		/* .section-main-title h2{margin-bottom: 12px;} */
 		.service-content h4 a{font-size: 19px;}
 	</style>
-	
-	<style>
-	.serviceSwiper {
-    padding: 20px 30px 60px;
-}
-
-.serviceSwiper .swiper-slide {
-    height: auto;
-}
-
-.service-single-box {
-    height: 100%;
-}
-
-
-.swiper-button-next, .swiper-button-prev{
-color: var(--swiper-navigation-color, #0b2e4a82);
-}
-
-.swiper-button-next, .swiper-button-prev{
-width:calc(var(--swiper-navigation-size)/ 36 * 2);
-}
-.swiper-button-next:after, .swiper-button-prev:after{
-font-size:27px;}
-
-</style>
 
 	<div class="service-area" style="padding-top:100px;">
 		<div class="container">
@@ -488,19 +462,13 @@ font-size:27px;}
 						</div>
 						<div class="section-main-title">
 							<h2>We Specialise Service</h2>
+							<!-- <p>As a nurse-led and RQIA-registered agency, we specialise in:</p> -->
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-			
-			
-			<div class="swiper serviceSwiper">
-    <div class="swiper-wrapper">
-			
-			
-			
-		  <div class="swiper-slide">
+				<div class="col-lg-3 col-md-6">
 					<div class="service-single-box wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
 						<div class="service-thumb">
 							<img src="assets/images/service/homeserviveone.png" alt="">
@@ -516,8 +484,8 @@ font-size:27px;}
 							<a href="services.html#care-home-staffing">Read More +</a>
 						</div>
 					</div>
-			    </div>
-		 <div class="swiper-slide">
+				</div>
+				<div class="col-lg-3 col-md-6">
 					<div class="service-single-box wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
 						<div class="service-thumb">
 							<img src="assets/images/service/homeservivetwo.png" alt="">
@@ -533,9 +501,8 @@ font-size:27px;}
 							<a href="services.html#support-workers">Read More +</a>
 						</div>
 					</div>
-			
-				    </div>
-						 <div class="swiper-slide">
+				</div>
+				<div class="col-lg-3 col-md-6">
 					<div class="service-single-box wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1s">
 						<div class="service-thumb">
 							<img src="assets/images/service/per.png" alt="">
@@ -551,9 +518,8 @@ font-size:27px;}
 							<a href="services.html#specialist-one-to-one-care">Read More +</a>
 						</div>
 					</div>
-			
-			    </div>
-						 <div class="swiper-slide">
+				</div>
+					<div class="col-lg-3 col-md-6">
 					<div class="service-single-box wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1s">
 						<div class="service-thumb">
 							<img src="assets/images/service/homeservivethree.png" alt="">
@@ -569,41 +535,12 @@ font-size:27px;}
 							<a href="services.html#permanent-staffing">Read More +</a>
 						</div>
 					</div>
-		   </div>
-		   
-		   
-		   			 <div class="swiper-slide">
-					<div class="service-single-box wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1s">
-						<div class="service-thumb">
-							<img src="assets/images/service/homeservivethree.png" alt="">
-							<div class="service-icon">
-								<img src="assets/images/service/service-icon3.png" alt="">
-							</div>
-						</div>
-						<div class="service-content">
-							<h4><a href="services.html#domiciliary-care-services">Domiciliary Care Services (Health One Home care)</a></h4>
-							<p>Our health One home care services support individuals who wish to remain independent while receiving care..</p>
-						</div>
-						<div class="Lifesafe-btn service">
-							<a href="services.html#domiciliary-care-services">Read More +</a>
-						</div>
-					</div>
-		   </div>
-				
-		</div>		
-				
-				    <!-- Navigation -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-
-    <!-- Pagination -->
-    <!--<div class="swiper-pagination"></div>-->
-
-				
-				
+				</div>
 			</div>
 		</div>
 	</div>
+
+
 
 
 <!-- 
@@ -1504,68 +1441,6 @@ $('.sidebar-widget-menu ul li a[href="about.html"]').click(function (e) {
     if (isServiceOpen) {
         serviceLink.trigger('click');
     }
-});
-</script>
-
-
-
-
-<style>
-.serviceSwiper {
-    overflow: hidden;
-}
-
-.serviceSwiper .swiper-slide {
-    height: auto;
-}
-
-.serviceSwiper .service-single-box {
-    margin-bottom: 0;
-    height: 100%;
-}
-</style>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    new Swiper(".serviceSwiper", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        loop: true,
-
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-
-        breakpoints: {
-            0: {
-                slidesPerView: 1
-            },
-            576: {
-                slidesPerView: 2
-            },
-            992: {
-                slidesPerView: 3
-            },
-            1200: {
-                slidesPerView: 4
-            }
-        }
-    });
-
 });
 </script>
 </body>
