@@ -40,6 +40,7 @@
 	<!-- modernizr js -->
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 <style>
+  form textarea{color:#000 !important;}
 .vbox-num,.vbox-close,.vbox-next,.vbox-prev{display: none !important;}
 .insurance-form-box input,.insurance-form-box select,.insurance-form-box textarea {
 	color: #000000;
@@ -223,7 +224,7 @@ right: 0;        left: inherit;
 										
 									<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
-										<li><a href="services.html#specialist-one-to-one-care">Specilaist 1:1 Care</a></li>
+										<li><a href="services.html#specialist-one-to-one-care">Specialist 1:1 Care</a></li>
 										<li><a href="services.html#domiciliary-care-services">Domiciliary Care Services</a></li>
 										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
 										<!-- <li><a href="home-insurance.html">Home Insurance</a></li>
@@ -364,34 +365,46 @@ right: 0;        left: inherit;
     margin-bottom: 25px;
 							}
 						</style>
-						<form method="POST" id="it-form">
+					
+                          <form action="send-contact.php" method="POST" id="it-form">
 							<div class="row">
 								<div class="col-lg-6 col-md-6">
 									<div class="form-box">
-										<input type="text" name="name" placeholder="Your Name">
+										<input type="text" name="name" placeholder="Your Name" required>
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6">
 									<div class="form-box">
-										<input type="text" name="phone" placeholder="Phone Numbar">
+										<input type="text" name="contact" placeholder="Phone Numbar" required>
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6">
 									<div class="form-box">
-										<input type="text" name="email" placeholder="Email Address">
+										<input type="text" name="email" required placeholder="Email Address">
 									</div>
 								</div>
 								
 								<div class="col-lg-6">
 														<div class="form-box">
 															
-															<select required name="input_service" id="ff_3_input_service" class="ff-el-form-control" data-name="input_service" data-calc_value="0" aria-invalid="false" aria-required="true"><option value="">- Select Option -</option><option value="Clinical Staff">Clinical Staff</option><option value="Efficient Office Team">Efficient Office Team</option><option value="Nurses">Nurses</option><option value="Occupational Therapists">Occupational Therapists</option><option value="Care Staff">Care Staff</option><option value="Caring Interventions">Caring Interventions</option></select>
+															<select required name="input_service"
+                                                                    id="ff_3_input_service" 
+                                                                    class="ff-el-form-control"
+                                                                    data-name="input_service"
+                                                                    data-calc_value="0"
+                                                                    aria-invalid="false" 
+                                                                    aria-required="true"
+                                                                    ><option value="">- Select Option -</option><option value="Clinical Staff">Clinical Staff</option><option value="Efficient Office Team">Efficient Office Team</option><option value="Nurses">Nurses</option><option value="Occupational Therapists">Occupational Therapists</option><option value="Care Staff">Care Staff</option><option value="Caring Interventions">Caring Interventions</option></select>
 														</div>
 													</div>
 
 								<div class="col-lg-12">
 									<div class="form-box">
-									<textarea required aria-invalid="false" aria-required="true" name="input_message" id="ff_3_input_message" class="ff-el-form-control" placeholder="Message" rows="5" cols="2" data-name="input_message"></textarea>
+									<textarea required aria-invalid="false" aria-required="true" 
+                                              name="message" required 
+                                              id="ff_3_input_message" class="ff-el-form-control"
+                                              placeholder="Message" rows="5" cols="2"
+                                              data-name="input_message"></textarea>
 									</div>
 								</div>
 							
@@ -466,7 +479,7 @@ right: 0;        left: inherit;
 											<!-- <li><a href="services.html">Service</a></li> -->
 											<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
-										<li><a href="services.html#specialist-one-to-one-care">Specilaist 1:1 Care</a></li>
+										<li><a href="services.html#specialist-one-to-one-care">Specialist 1:1 Care</a></li>
 										<li><a href="services.html#domiciliary-care-services">Domiciliary Care Services</a></li>
 										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
 										</ul>
@@ -534,7 +547,7 @@ right: 0;        left: inherit;
 							<ul>
 								<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
-										<li><a href="services.html#specialist-one-to-one-care">Specilaist 1:1 Care</a></li>
+										<li><a href="services.html#specialist-one-to-one-care">Specialist 1:1 Care</a></li>
 										<li><a href="services.html#domiciliary-care-services">Domiciliary Care Services</a></li>
 										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
 							

@@ -215,7 +215,7 @@ select{width: 100% !important;}
 										
 									<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
-										<li><a href="services.html#specialist-one-to-one-care">Specilaist 1:1 Care</a></li>
+										<li><a href="services.html#specialist-one-to-one-care">Specialist 1:1 Care</a></li>
 										<li><a href="services.html#domiciliary-care-services">Domiciliary Care Services</a></li>
 										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
 										<!-- <li><a href="home-insurance.html">Home Insurance</a></li>
@@ -401,11 +401,11 @@ color: #ffffff;
 
 
         <video muted playsinline preload="auto" class="desktop-video">
-            <source src="assets/vid/desk.mp4" type="video/mp4">
+            <source src="assets/vid/desk.mp4?v=3" type="video/mp4">
         </video>
 
         <video muted playsinline preload="auto" class="mobile-video">
-            <source src="assets/vid/mob.mp4" type="video/mp4">
+            <source src="assets/vid/mob.mp4?v=3" type="video/mp4">
         </video>
 
   <div class="video-overlay"></div>
@@ -447,7 +447,7 @@ color: #ffffff;
 	<style>
 		.service-area .service-icon{display: none;}
 		.service-content p{    margin: 20px 0 25px;}
-		.service-content{    padding: 20px 20px;}
+		.service-content{    padding: 20px 20px;height:280px;}
 		/* .section-main-title h2{margin-bottom: 12px;} */
 		.service-content h4 a{font-size: 19px;}
 	</style>
@@ -479,6 +479,8 @@ font-size:27px;}
 	@media only screen and (max-width: 768px) {
 .swiper-button-next:after, .swiper-button-prev:after{
 font-size:20px;}
+
+.service-content{height:auto;}
 	}
 </style>
 
@@ -954,18 +956,19 @@ Her leadership ensures:
 								<div class="tab_content">
 									<div class="tabs_item">
 										<div class="insurance-form">
-											<form action="" method="POST" id="it-form">
+									
+                                                 <form action="send-contact-home.php" method="POST" id="it-form">
 												<div class="row">
 													<div class="col-lg-6">
 														<div class="insurance-form-box">
 															<label for="name">Your Full Name</label><br>
-															<input type="text" id="name" name="name" required>
+															<input type="text" id="name"  name="name" required>
 														</div>
 													</div>
 													<div class="col-lg-6">
 														<div class="insurance-form-box">
 															<label for="phone">Phone</label><br>
-															<input type="text" id="phone" name="phone" required>
+															<input type="text" id="phone" name="contact" required>
 														</div>
 													</div>
 													<div class="col-lg-6">
@@ -1003,14 +1006,24 @@ Her leadership ensures:
 													<div class="col-lg-6">
 														<div class="insurance-form-box">
 															<label for="type">Select Option</label><br>
-															<select required name="input_service" id="ff_3_input_service" class="ff-el-form-control" data-name="input_service" data-calc_value="0" aria-invalid="false" aria-required="true"><option value="">- Select Option -</option><option value="Clinical Staff">Clinical Staff</option><option value="Efficient Office Team">Efficient Office Team</option><option value="Nurses">Nurses</option><option value="Occupational Therapists">Occupational Therapists</option><option value="Care Staff">Care Staff</option><option value="Caring Interventions">Caring Interventions</option></select>
+															<select required required name="input_service"
+                                                                    id="ff_3_input_service" 
+                                                                    class="ff-el-form-control"
+                                                                    data-name="input_service" 
+                                                                    data-calc_value="0" aria-invalid="false"
+                                                                    aria-required="true"><option value="">- Select Option -</option><option value="Clinical Staff">Clinical Staff</option><option value="Efficient Office Team">Efficient Office Team</option><option value="Nurses">Nurses</option><option value="Occupational Therapists">Occupational Therapists</option><option value="Care Staff">Care Staff</option><option value="Caring Interventions">Caring Interventions</option></select>
 														</div>
 													</div>
 
 <div class="col-lg-12">
 														<div class="insurance-form-box">
 															<label for="type">Message</label><br>
-													<textarea required aria-invalid="false" aria-required="true" name="input_message" id="ff_3_input_message" class="ff-el-form-control" placeholder="Message" rows="5" cols="2" data-name="input_message"></textarea>
+													<textarea required aria-invalid="false" 
+                                                              aria-required="true" name="message"
+                                                              id="ff_3_input_message" 
+                                                              class="ff-el-form-control"
+                                                              placeholder="Message" rows="5" cols="2"
+                                                              data-name="input_message"></textarea>
 											</div>
 													</div>
 													<div class="col-lg-6">
@@ -1197,8 +1210,8 @@ About Health One Group?</h2>
                     <div class="testi-header">
                       
                         <div class="testi-title">
-                            <h4>Sinead</h4>
-                            <span>OT</span>
+                            <h4>Dibina David</h4>
+                            <span></span>
                         </div>
                     </div>
 
@@ -1211,7 +1224,8 @@ About Health One Group?</h2>
                     </div>
 
                     <div class="testi-discription">
-                        <p>Really simple recruitment process, GREAT TEAM!</p>
+                        <p>Highly recommended agency to work. I’ve had a really great experience working with Health One group.
+The service is outstanding. The team is very responsive and helpful in solving all the queries. 24 hours support is available in this agency. They update their staff with relevant trainings. They have a reliable team. They are always approachable and if you have any concerns, they genuinely try their best to resolve them</p>
                     </div>
 					<div class="testi-qouet">
 									<i class="bi bi-quote"></i>
@@ -1225,8 +1239,8 @@ About Health One Group?</h2>
                     <div class="testi-header">
                         
                         <div class="testi-title">
-                            <h4>Laura</h4>
-                            <span>Nurse</span>
+                            <h4>Chidozie Henry</h4>
+                            <span></span>
                         </div>
                     </div>
 
@@ -1239,7 +1253,7 @@ About Health One Group?</h2>
                     </div>
 
                     <div class="testi-discription">
-                        <p>Every question I've had has been answered and the opportunities for development are great</p>
+                        <p>My experience with Health One Group Agency has been very good. The management is supportive, communicates well, and is always quick to help. Shifts are organised properly, and I feel respected and valued as a staff member. Kudos to the Director of Nursing, Jaya, for her excellent leadership skills. It’s a great agency to work with.</p>
                     </div>
 					<div class="testi-qouet">
 									<i class="bi bi-quote"></i>
@@ -1496,7 +1510,7 @@ width: 117px;
 											<!-- <li><a href="services.html">Service</a></li> -->
 											<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
-										<li><a href="services.html#specialist-one-to-one-care">Specilaist 1:1 Care</a></li>
+										<li><a href="services.html#specialist-one-to-one-care">Specialist 1:1 Care</a></li>
 										<li><a href="services.html#domiciliary-care-services">Domiciliary Care Services</a></li>
 										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
 										</ul>
@@ -1566,7 +1580,7 @@ width: 117px;
 							<ul>
 								<li><a href="services.html#care-home-staffing">Care Home Staffing</a></li>
 										<li><a href="services.html#support-workers">Support Workers</a></li>
-										<li><a href="services.html#specialist-one-to-one-care">Specilaist 1:1 Care</a></li>
+										<li><a href="services.html#specialist-one-to-one-care">Specialist 1:1 Care</a></li>
 										<li><a href="services.html#domiciliary-care-services">Domiciliary Care Services</a></li>
 										<li><a href="services.html#permanent-staffing">Permanent Staffing</a></li>
 							
