@@ -1081,7 +1081,7 @@ ul.tabs {
 ===================================================*/
 
 .protection-area {
-    background: url(../images/resource/protection-bg.webp);
+    background: url(../images/resource/protection-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1962,7 +1962,7 @@ li.table-brb span.style {
 /* ABOUT AREA STYLE TWO */
 
 .about-area.style-two {
-    background: url(../images/about/about-bg.webp);
+    background: url(../images/about/about-bg.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -2211,7 +2211,7 @@ p.about2 {
 /* CHOOSE US AREA */
 
 .choose-us-area.style-two {
-    background: url(../images/resource/choose-us-bg.webp);
+    background: url(../images/resource/choose-us-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -2398,7 +2398,7 @@ p.about2 {
 /* GET IN TOUCH AREA */
 
 .get-in-touch-area {
-    background: url(../images/resource/get-ng.webp);
+    background: url(../images/resource/get-ng.jpg);
     background-position: center ceneter;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2560,7 +2560,7 @@ p.blog-two-discription {
 /* HEADER AREA */
 
 .header-area.style-three::before {
-    background: url(../images/resource/header-shape3.webp);
+    background: url(../images/resource/header-shape3.png);
 }
 
 .header-area.style-three::after {
@@ -2768,7 +2768,7 @@ circle {
 /* ABOUT AREA */
 
 .about-area.style-three {
-    background: url(../images/resource/get-ng.webp);
+    background: url(../images/resource/get-ng.jpg);
     padding: 110px 0 120px;
 }
 
@@ -2997,7 +2997,7 @@ circle {
 /* CHOOSE US AREA */
 
 .choose-us-area.style-three {
-    background: url(../images/resource/choose-bg.webp);
+    background: url(../images/resource/choose-bg.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -3010,7 +3010,7 @@ circle {
     content: "";
     width: 40%;
     height: 100%;
-    background: url(../images/resource/choose-bg2.webp);
+    background: url(../images/resource/choose-bg2.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -3192,7 +3192,7 @@ circle {
 /* CALL DO ACTION AREA */
 
 .call-do-action-area {
-    background: url(../images/resource/call-do-bg.webp);
+    background: url(../images/resource/call-do-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 602px;
@@ -3311,7 +3311,7 @@ circle {
 
 
 .breatcome-area {
-    background: url(../images/resource/bretcome-bg.webp);
+    background: url(../images/resource/bretcome-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
