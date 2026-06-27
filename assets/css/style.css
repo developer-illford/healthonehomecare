@@ -514,6 +514,8 @@ display: inline-block;
     transform: scale(1.15);
 }
 
+
+
 .slider-content {
     position: absolute;
     top: 50%;
@@ -555,10 +557,11 @@ display: inline-block;
     border-radius: 16px;
     font-size: 16px;
     font-weight: 600;
-    color: #0b2e4a;
+    color: #ffffff;
     font-family: "Raleway";
     position: relative;
-    background: #FFF;
+    background: transparent;
+    border: 1px solid white;
     display: inline-block;
     padding: 6px 18px;
 }
@@ -594,7 +597,7 @@ display: inline-block;
 .slider-main-title h1 {
     font-size: 72px;
     line-height: 82px;
-    color: #0b2e4a;
+    color: #ffffff;
     font-weight: 800;
 }
 
@@ -623,7 +626,7 @@ display: inline-block;
 .slider-discription p {
     font-size: 16px;
     line-height: 24px;
-    color: #505050;
+    color: #ffffff;
     font-weight: 400;
     margin: 30px 0 56px;
     width: 85%;

@@ -32,7 +32,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
 	<!-- Main Style CSS -->
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/style.css?v=2" type="text/css" media="all">
 	<!-- Dropdown CSS -->
 	<link rel="stylesheet" href="assets/css/dropdown.css" type="text/css" media="all">
 	<!-- responsive CSS -->
@@ -301,7 +301,28 @@ select{width: 100% !important;}
     }
 }
 
+/* Mobile - reposition image to show the right area */
+@media (max-width: 768px) {
+    .banner-carousel .slide-item .image-layer {
+        background-position: 40% center; /* shifts focus to the people on the right */
+        background-size: cover;
+    }
 
+    .slider-content {
+        width: 90%;
+        left: 5%;
+    }
+
+    .slider-main-title h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .slider-discription p {
+        width: 100%;
+        margin: 15px 0 30px;
+    }
+}
 
 
 /**text***/
@@ -332,6 +353,22 @@ select{width: 100% !important;}
     height: 100%;
     background: rgba(0, 0, 0, 0.45);
     z-index: 2;
+}
+
+/* image */
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 2;
+}
+
+.slider-content {
+    z-index: 3;
 }
 
 /* Text Content */
@@ -373,10 +410,13 @@ color: #ffffff;
 }
 
 </style>
+
 	<section class="banner-section">
 		<div class="banner-carousel owl-carousel">
 			<div class="slide-item one">
-				<div class="image-layer" style="background-image: url('assets/images/slider/ban1.png');"></div>
+				<div class="image-layer" style="background-image: url('assets/images/slider/Banner.webp');"></div>
+<div class="image-overlay"></div>
+
 				<div class="container">
 					<div class="slider-content">
 						<div class="slider-sub-title">
